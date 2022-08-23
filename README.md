@@ -1,24 +1,18 @@
 # Blog engine for ASP.NET Core 3.1
 
-A full-featured yet simple blog engine built on ASP.NET Core 3.1.
-
-Please be aware that [Mads is taking pull requests, but is not actively working on it](https://github.com/madskristensen/Miniblog.Core/issues/159#issuecomment-765629584).
-
-[![Build status](https://ci.appveyor.com/api/projects/status/lwjrlpvmhg50wwbs?svg=true)](https://ci.appveyor.com/project/madskristensen/miniblog-core)
-[![NuGet](https://img.shields.io/nuget/v/MadsKristensen.AspNetCore.Miniblog.svg)](https://nuget.org/packages/MadsKristensen.AspNetCore.Miniblog/)
-
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
-
-**Live demo**: <https://miniblogcore.azurewebsites.net/>  
-Username: *demo*  
-Password: *demo*
+## Description
+A full-featured yet simple blog engine built on ASP.NET Core, forked from the original [Miniblog.Core](https://github.com/madskristensen/Miniblog.Core) from [Mads Kristensen](https://github.com/madskristensen)
 
 ![Editor](art/editor.png)
 
-### Custom themes
-In search for custom designed themes for MiniBlog.Core? [Click here](https://francis.bio/miniblog-themes/).
+- **Live demo**: <https://miniblogcore.azurewebsites.net/>  
+  - Username: *demo*  
+  - Password: *demo*
+
 
 ## Features
+
+### Original Miniblog.Core
 - Windows/Open Live Writer support
 - RSS and ATOM feeds
 - User comments
@@ -30,9 +24,20 @@ In search for custom designed themes for MiniBlog.Core? [Click here](https://fra
 - Looks great when printed
 - Works offline with use of [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers/)
 - Follows best practices for web applications
-  - [See DareBoost report](https://www.dareboost.com/en/report/59e928f10cf224d151dfbe2d)
+- YouTube embeds:
+  - You can embed any youtube video by using the following syntax in the source of a blog post:
+    ```
+    [youtube:ScXvuavqhzo]
+    ```
+    *ScXvuavqhzo* is the ID of the YouTube video which can be found in any YouTube link looking this *youtube.com/watch?v=**ScXvuavqhzo***
 
-## Technical features
+### ChustaSoft enhancements
+- 
+
+
+## Technical remarks
+
+### Original Miniblog.Core
 - High performance. Gets 100/100 points on Google PageSpeed Insights 
   - [Run PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fminiblogcore.azurewebsites.net%2F)
 - Speed Index < 1000
@@ -58,33 +63,13 @@ In search for custom designed themes for MiniBlog.Core? [Click here](https://fra
 - Uses the [Azure Image Optimizer](https://github.com/madskristensen/ImageOptimizerWebJob) for superb image compression
 - Uses a [CDN Tag Helper](https://github.com/madskristensen/WebEssentials.AspNetCore.CdnTagHelpers) to make it easy to serve the images from any CDN.
 
-### YouTube embeds
-You can embed any youtube video by using the following syntax in the source of a blog post:
+### ChustaSoft enhancements
+- 
 
-```
-[youtube:ScXvuavqhzo]
-```
-
-*ScXvuavqhzo* is the ID of the YouTube video which can be found in any YouTube link looking this *youtube.com/watch?v=**ScXvuavqhzo***
 
 ## How to use
-On the command line, install the template.
+Just fork this repository, adapting what is necessary for the needs of your blog and that's all!
 
-```cmd
-dotnet new --install MadsKristensen.AspNetCore.Miniblog
-```
-
-Then create it into any folder.
-
-```cmd
-dotnet new miniblog
-```
-
-Then run it or open it in Visual Studio or your favorite code editor.
-
-```cmd
-dotnet run
-```
 
 ## Credits
 SVG icons by <https://simpleicons.org/>
